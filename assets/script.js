@@ -1203,21 +1203,21 @@ const createYearlyTotalTable = () => {
         if ((ee) && ee.length) {
             ee.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
-                _totalExpense = _totalIncome + parseInt(amt);
+                _totalExpense = _totalExpense + parseInt(amt);
             });
         }
         let de = incomeData.diposit_expenses; 
         if ((de) && de.length) {
             de.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
-                _totalExpense = _totalIncome + parseInt(amt);
+                _totalExpense = _totalExpense + parseInt(amt);
             });
         }
         let pe = incomeData.predicted_expenses; 
         if ((pe) && pe.length) {
             pe.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
-                _totalExpense = _totalIncome + parseInt(amt);
+                _totalExpense = _totalExpense + parseInt(amt);
             });
         }
     }
