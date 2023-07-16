@@ -1192,28 +1192,28 @@ const createYearlyTotalTable = () => {
     }
 
     if (expenseData) {
-        let fe = incomeData.fixed_expenses; 
+        let fe = expenseData.fixed_expenses; 
         if ((fe) && fe.length) {
             fe.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
                 _totalExpense = _totalExpense + parseInt(amt);
             });
         }
-        let ee = incomeData.emi_expenses; 
+        let ee = expenseData.emi_expenses; 
         if ((ee) && ee.length) {
             ee.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
                 _totalExpense = _totalExpense + parseInt(amt);
             });
         }
-        let de = incomeData.diposit_expenses; 
+        let de = expenseData.diposit_expenses; 
         if ((de) && de.length) {
             de.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
                 _totalExpense = _totalExpense + parseInt(amt);
             });
         }
-        let pe = incomeData.predicted_expenses; 
+        let pe = expenseData.predicted_expenses; 
         if ((pe) && pe.length) {
             pe.forEach(function(item) {
                 let amt = (item.amount != '') ? item.amount : 0;
@@ -1232,11 +1232,13 @@ const createYearlyTotalTable = () => {
     tr.append(`<td class="total-inhand"><i class="fas fa-rupee-sign"></i> ${displayMoneyFormat(_totalInhand)}</td>`);
     reportTabTbody.append(tr);
 
-    let tr2 = $('<tr/>');
-    tr2.append(`<td class="total-income-perc"></td>`);
-    tr2.append(`<td class="total-expense-perc">${expenseInPercentage}%</td>`);
-    tr2.append(`<td class="total-inhand-perc">${inhandInPercentage}%</td>`);
-    reportTabTbody.append(tr2);
+    if (parseInt(_totalInhand) > 0) {
+        let tr2 = $('<tr/>');
+        tr2.append(`<td class="total-income-perc"></td>`);
+        tr2.append(`<td class="total-expense-perc">${expenseInPercentage}%</td>`);
+        tr2.append(`<td class="total-inhand-perc">${inhandInPercentage}%</td>`);
+        reportTabTbody.append(tr2);
+    }
 
     reportTab.append(reportTabThead);
     reportTab.append(reportTabTbody);
