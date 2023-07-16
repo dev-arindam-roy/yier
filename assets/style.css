@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.card-header-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.table tr td {
+    vertical-align: middle;
+}
+.table tr th {
+    vertical-align: middle;
+}
+
+td.dd-td, td.amt-td, td.rm-td {
+    vertical-align: unset !important;
+}
+
+.select2-selection {
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    color: #555555;
+    font-size: 14px;
+    outline: 0;
+    min-height: 36px;
+    text-align: left;
+}
+
+.select2-selection__rendered {
+    margin: 4px;
+}
+
+.select2-selection__arrow {
+    margin: 4px;
+}
+
+.dd-td {
+    width: 175px;
+}
+.amt-td {
+    width: 140px;
+}
+.rm-td {
+    width: 30px;
+    text-align: center;
+}
+.select2-selection__choice {
+    background-color: #0080d1 !important;
+    border: 1px solid #00578d !important;
+}
+.select2-selection__choice__remove {
+    border-right: 1px solid #fff !important;
+    color: #fff !important;
+}
+.select2-selection__choice__display {
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #aaa !important;
+}
+#onexExpenseTab tr td, #onexExpenseTab tr th{
+    text-align: left;
+}
+#onexExpenseTab tr td:last-child, #onexExpenseTab tr th:last-child {
+    text-align: right;
+}
+td.expense-type {
+    font-weight: 500;
+}
+#onexIncomeTab tr td, #onexIncomeTab tr th{
+    text-align: left;
+}
+#onexIncomeTab tr td:last-child, #onexIncomeTab tr th:last-child {
+    text-align: right;
+}
+td.income-type {
+    font-weight: 500;
+}
+span.months-show {
+    font-size: 14px;
+    color: #6c6c6c;
+}
+td.expense-title-td, td.income-title-td {
+    font-size: 15px;
+    font-weight: 500;
+}
+td.expense-type-td, td.income-type-td {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table#onexReportTab thead {
+    background: #283747;
+    color: #fff;
+    border: 1px solid #1B2631;
+}
+table#onexReportTab th.months-name-th {
+    background: #283747;
+}
+table#onexReportTab tbody {
+    border: 1px solid #1B2631;
+}
+table#onexReportTab tr th:first-child {
+    text-align: right;
+}
+table#onexReportTab tr th {
+    padding: 8px;
+    min-width: 90px;
+    white-space: nowrap;
+    text-align: right;
+}
+table#onexReportTab tr td {
+    padding: 8px;
+    min-width: 90px;
+    white-space: nowrap;
+    text-align: right;
+}
+table#onexReportTab tbody th.fixed-expense-th {
+    background-color: #E67E22;
+    color: #fff;
+}
+table#onexReportTab tbody th.emi-expense-th {
+    background-color: #E74C3C;
+    color: #fff;
+}
+table#onexReportTab tbody th.diposit-expense-th {
+    background-color: #9B59B6;
+    color: #fff;
+}
+table#onexReportTab tbody th.predicted-expense-th {
+    background-color: #F1C40F;
+    color: #fff;
+}
+table#onexReportTab tbody th.fixed-income-th {
+    background-color: #2ECC71;
+    color: #fff;
+}
+table#onexReportTab tbody th.certain-income-th {
+    background-color: #1ABC9C;
+    color: #fff;
+}
+table#onexReportTab tbody th.total-expense-th {
+    background-color: #B03A2E;
+    color: #fff;
+}
+table#onexReportTab tbody th.total-income-th {
+    background-color: #1D8348;
+    color: #fff;
+}
+table#onexReportTab tbody th.total-save-th {
+    background-color: #2980B9;
+    color: #fff;
+}
+table#onexReportTab tbody tr.total-expense-tr {
+    background-color: #F5B7B1;
+    color: #000;
+    font-weight: 500;
+}
+table#onexReportTab tbody tr.total-income-tr {
+    background-color: #ABEBC6;
+    color: #000;
+    font-weight: 500;
+}
+table#onexReportTab tbody tr.total-inhand-tr {
+    background-color: #AED6F1;
+    color: #000;
+    font-weight: 500;
+}
+.fix-tab-cell {
+    position: sticky;
+    left: -1px;
+}
+#tableReportTotal th.total-income {
+    background-color: #2ECC71;
+    color: #fff;
+}
+#tableReportTotal th.total-expense {
+    background-color: #E74C3C;
+    color: #fff;
+}
+#tableReportTotal th.total-inhand {
+    background-color: #2980B9;
+    color: #fff;
+}
+#tableReportTotal td.total-income {
+    background-color: #ABEBC6;
+}
+#tableReportTotal td.total-expense {
+    background-color: #F5B7B1;
+}
+#tableReportTotal td.total-inhand {
+    background-color: #AED6F1;
+}
+#tableReportTotal tbody {
+    border: 1px solid #1B2631;
+    font-weight: 600;
+}
+#tableReportTotal thead {
+    border: 1px solid #1B2631;
+}
