@@ -1149,7 +1149,7 @@ const generateAllReports = () => {
     createTotalIncomeRows();
     createTotalSaveRows();
 
-    //createYearlyTotalTable();
+    createYearlyTotalTable();
 
     scrollToDiv('#tableReportChart');
 }
@@ -1538,7 +1538,8 @@ const createTotalSaveRows = () => {
 }
 
 const displayMoneyFormat = (item) => {
-    return (item && item != '') ? + parseInt(item).toLocaleString("en-US") : 0;
+    return (item && item != '') ? parseInt(item).toLocaleString("en-US") : 0;
+    // return (item && item != '') ? new Intl.NumberFormat().format(item) : 0;
 }
 
 const scrollToDiv = (selector) => {
